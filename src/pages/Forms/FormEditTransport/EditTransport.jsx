@@ -42,7 +42,7 @@ const EditTransport = () => {
     
       useEffect(() => {
         async function getByID() {
-            const { data } = await axios.get(`http://localhost:3001/tables/logistica/${id}`);
+            const { data } = await axios.get(`https://etnia-production.up.railway.app/${id}`);
             setInput(data)
         }
         getByID()

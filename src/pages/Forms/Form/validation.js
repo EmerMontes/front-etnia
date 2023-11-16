@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable eqeqeq */
 export default function Validation(input){
-console.log(input)
+
 const errors={}
 
 // Name
