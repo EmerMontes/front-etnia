@@ -79,11 +79,11 @@ function RegisterForm(props) {
           setMensaje(
             "Registro exitoso: Revisa tu correo para confirmar tu contraseña"
           );
-          // console.log(
+           console.log(
             "Registro exitoso: Revisa tu correo para confirmar tu contraseña",
             response.message
           );
-        //  navigate("/");
+           //  navigate("/");
           // Aquí puedes continuar con el código después de registrar al usuario con éxito
         } else {
           console.error("Error durante el registro:", response.message);
