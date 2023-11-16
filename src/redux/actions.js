@@ -106,8 +106,8 @@ export const GET_REVIEW_BY_ID = 'GET_REVIEW_BY_ID';
 export const UPDATE_REVIEW = 'UPDATE_REVIEW';
 export const DELETE_REVIEW = 'DELETE_REVIEW';
 
-const URL = 'http://localhost:3001';
-// const URL = "https://etniasoftcommerce.up.railway.app";
+// const URL = 'http://localhost:3001';
+const URL = "https://etnia-production.up.railway.app/";
 
 export const registroTerceros = (payload) => async (dispatch) => {
   console.log("holaaa desde la accion apenas entra");
