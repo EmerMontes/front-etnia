@@ -61,16 +61,16 @@ function LogIn(props) {
   }
 
   const cargarCarrito = (email)=>{
-    console.log("cargarCarrito")
+    // console.log("cargarCarrito")
     // eslint-disable-next-line no-shadow, array-callback-return
     cartLocalStorage.forEach(cartPersist => {
       const keys = Object.keys(cartPersist);
     
       keys.forEach(key => {
-        console.log("Clave:", key);
+        // console.log("Clave:", key);
         if (key === email) {
           
-          console.log(cartPersist[key])
+          // console.log(cartPersist[key])
           dispatch(loadCart(cartPersist[key]));
         }
       });
@@ -93,7 +93,7 @@ function LogIn(props) {
         // Determina el código de estado según el tipo de error
       });
 
-    console.log(User);
+    // console.log(User);
   };
 
   return (

@@ -29,7 +29,7 @@ function Card({id, name, gender, sale, img, color, price}) {
       // dispatch(getAddFavorites(product));
       dispatch(AddFavoriteBack({UserId: user.userId, ProductId: id}))
     }
-    console.log(user);
+    // console.log(user);
   };
 
   useEffect(() => {

@@ -54,9 +54,9 @@ export default function ProductsPage() {
     setCurrentList(productoss);
   }, [dispatch, productoss]);
 
-  console.log('va a imprimir los estados');
-  console.log(productoss);
-  console.log(productossEliminados);
+  // console.log('va a imprimir los estados');
+  // console.log(productoss);
+  // console.log(productossEliminados);
 
   const [page, setPage] = useState(0);
 

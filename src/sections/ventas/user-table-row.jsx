@@ -51,7 +51,7 @@ export default function UserTableRow({
   };
 
   const handleEditClick = () => {
-    console.log('Editar', id);
+    // console.log('Editar', id);
     navigate('/editproduct');
     handleCloseMenu();
   };

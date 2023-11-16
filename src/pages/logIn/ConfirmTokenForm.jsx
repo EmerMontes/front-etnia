@@ -43,15 +43,15 @@ function ConfirmTokenForm() {
     // Luego, confirma el token utilizando tu acción `confirmToken`
     dispatch(confirmToken(token))
       .then((response) => {
-        console.log("formulario dispatch");
-        console.log(response.success);
+        // console.log("formulario dispatch");
+        // console.log(response.success);
         if (response.success) {
           navigate("/user");
           // Aquí puedes continuar con el código después de confirmar el token con éxito
         }
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
         //setError("Error al confirmar el token");
         // Determina el código de estado según el tipo de error
       });

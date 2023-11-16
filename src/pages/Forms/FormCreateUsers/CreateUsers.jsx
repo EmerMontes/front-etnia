@@ -80,7 +80,7 @@ const CreateUser = () => {
             else { input.employee= false}
             if(input.admin ==="admin")  {input.admin=true}
             else {input.admin= false}
-            console.log(input)   
+            // console.log(input)   
             await dispatch(createUser(input))
             mostrarAlertaExitosa();
             setInput({name:'', last_name: '', email:'', address:'', phone_number: '',

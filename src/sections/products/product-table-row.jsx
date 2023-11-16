@@ -53,20 +53,20 @@ export default function ProductTableRow({
   };
 
   const handleEditClick = () => {
-    console.log('Editar', id);
+    // console.log('Editar', id);
     navigate(`/editproduct/${id}`);
     handleCloseMenu();
   };
 
   const handleDeleteClick = () => {
     dispatch(deleteProduct(id));
-    console.log('Eliminar', id);
+    // console.log('Eliminar', id);
     handleCloseMenu();
   };
   const handleRestoreClick = () => {
     window.location.reload();
     dispatch(restoreProduct(id));
-    console.log('restaurrrr', id);
+    // console.log('restaurrrr', id);
     handleCloseMenu();
   };
 

@@ -55,7 +55,7 @@ const CreateEmpresa = () => {
       const handleSubmit = async (evento) => {
         evento.preventDefault();
         try {
-          console.log(input)
+          // console.log(input)
           let long = Object.values(errors);
           if (long.length === 0) {
             input.name= primeraMayuscula(input.name)

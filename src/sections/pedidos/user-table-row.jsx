@@ -39,12 +39,12 @@ export default function UserTableRow({
   };
 
   const handleEditClick = () => {
-    console.log('Editar', prenda);
+    // console.log('Editar', prenda);
     handleCloseMenu();
   };
 
   const handleDeleteClick = () => {
-    console.log('Eliminar', prenda);
+    // console.log('Eliminar', prenda);
     handleCloseMenu();
   };
 

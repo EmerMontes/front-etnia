@@ -28,7 +28,7 @@ const FormEditProduct = () => {
 
 
   //const inputReduce = useSelector((state) => state.productDetail);
-  //console.log(inputReduce)
+  //// console.log(inputReduce)
 
   const [errorSubmit, setErrorSubmit] = useState('');
   const gErrors = useSelector((state) => state.errors);
@@ -68,7 +68,7 @@ const FormEditProduct = () => {
   }, [id, dispatch]);
 
   
-  console.log(input)  
+ // // console.log(input)  
   //para armar el muñeco de entrada
 if (input.size) {
   for (let option of input.size) {
@@ -222,10 +222,10 @@ if (input.size) {
 
     // if (input.quantity === 0) {
     //   setErrorSubmit('Debe escoger una talla y una cantidad');
-    //   console.log (errorSubmit);
+    //   // console.log (errorSubmit);
     // }
     
-      console.log(input);
+      // console.log(input);
       dispatch(updateProduct(input));
      
       mostrarAlertaExitosa();

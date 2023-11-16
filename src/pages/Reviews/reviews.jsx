@@ -38,12 +38,12 @@ const Reviews = ({productId}) => {
     calification: 1,
     review: '',
   });
-console.log(productId);
+// console.log(productId);
   useEffect(() => {
     dispatch(getReviewById(productId));
   }, [productId , dispatch]);
-  console.log("aqui toy resenando");
-  console.log(reviewId);
+  // console.log("aqui toy resenando");
+  // console.log(reviewId);
 
   const handleCreateReview = () => {
     dispatch(createReview(newReview));

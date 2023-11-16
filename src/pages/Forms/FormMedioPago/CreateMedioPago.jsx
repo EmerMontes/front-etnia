@@ -71,7 +71,7 @@ const CreateMedioPago = () => {
           let long = Object.values(errors);
           if (long.length === 0) {
             input.name = primeraMayuscula(input.name);
-            console.log(input)
+            // console.log(input)
          // await dispatch(createEmpresa(input))
             mostrarAlertaExitosa()
             setInput({name:'', type_of_person: '', email:'', phone: ''})

@@ -80,8 +80,8 @@ const EditTransport = () => {
       const handleSubmit = async (evento) => {
         evento.preventDefault();
         try {
-          console.log(input)
-          console.log(errors)
+          // console.log(input)
+          // console.log(errors)
           const long = Object.values(errors);
           if (long.length === 0 || isAllEmptyStrings(long)) {
           input.name = primeraMayuscula(input.name)

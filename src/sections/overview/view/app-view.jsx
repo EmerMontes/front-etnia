@@ -22,10 +22,10 @@ export default function AppView() {
 
 
   useEffect(() => {
-    console.log(allUsers.length);
+    // console.log(allUsers.length);
   }, [allUsers]);
 
-  console.log(allUsers);
+  // console.log(allUsers);
 
   return (
     <Container maxWidth="xl">

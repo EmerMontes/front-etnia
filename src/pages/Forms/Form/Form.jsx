@@ -98,12 +98,12 @@ const Form = () => {
     }
   }
 
-  console.log(input)
+  // console.log(input)
 
 
   let isSubmitDisabled = Object.keys(errors).length > 0;
 
-  //console.log(isSubmitDisabled);
+  //// console.log(isSubmitDisabled);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -158,11 +158,11 @@ const Form = () => {
       input.category = primeraMayuscula(input.category);
       input.color = primeraMayuscula(input.color);
 
-      console.log(input);
+      // console.log(input);
 
       if (input.quantity === 0) {
         setErrorSubmit('Debe escoger una talla y una cantidad');
-        console.log(errorSubmit);
+        // console.log(errorSubmit);
       }
       else {
         await dispatch(createProduct(input));
@@ -180,7 +180,7 @@ const Form = () => {
           image: '',
           quantity: 0,
         });
-        console.log(input);
+        // console.log(input);
         // desmarca todo los checkbox
         for (let i = 0; i < document.f1.elements.length; i++) {
           if (document.f1.elements[i].type == 'checkbox') {

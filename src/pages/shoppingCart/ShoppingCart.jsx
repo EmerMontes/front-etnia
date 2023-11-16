@@ -23,7 +23,7 @@ function ShoppingCart() {
   const [objectPago, setObjectPago] = useState([]);
 
   useEffect(() => {
-    console.log(cartLocalStorage, cart);
+    // console.log(cartLocalStorage, cart);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -90,7 +90,7 @@ function ShoppingCart() {
   };
 
   const mercadoPago = () => {
-    console.log('entre al finishPurchase');
+    // console.log('entre al finishPurchase');
     if (user === null) {
       const Toast = Swal.mixin({
         toast: 'true',

@@ -47,9 +47,9 @@ function NavBar(props) {
   const tokenObject = { sub: tokenTerceros, email: emailTerceros };
 
   useEffect(() => {
-    console.log('holaaaa desde la navbar');
-    console.log(user);
-    console.log(tokenObject);
+    // console.log('holaaaa desde la navbar');
+    // console.log(user);
+    // console.log(tokenObject);
 
     if (tokenTerceros && tokenTerceros.length > 0 && tokenObject) {
       dispatch(registroTerceros(tokenObject));

@@ -103,7 +103,7 @@ const reducer = (state = initialState, action) => {
     
     case SAVE_CART:
       const { cart, user } = action.payload;
-  console.log(cart, user);
+  // console.log(cart, user);
 
   // Verificar si ya existe un objeto con la misma clave en cartLocalStorage
   const existingCartIndex = state.cartLocalStorage.findIndex(item => Object.keys(item)[0] === user);
@@ -147,7 +147,7 @@ const reducer = (state = initialState, action) => {
               return action.payload
 
               case GET_REVIEW_BY_ID: { 
-                console.log("estoy en el reducer")
+                // console.log("estoy en el reducer")
                 
                 return{
                   ...state,

@@ -21,7 +21,7 @@ const getFindSelects = async () => {
             allColors.push(productsInfo[i].color?.trim());
             allSize.push(productsInfo[i].size?.flatMap(siz => Object.keys(siz)));
             //allSize.flat();
-            //console.log(allSize)
+            //// console.log(allSize)
         }  
  
         //quita los repetidos
@@ -33,7 +33,7 @@ const getFindSelects = async () => {
         
         let setSizes = new Set (allSize.flat());
         let sizesSinRepetidos = Array.from(setSizes);
-        //console.log(sizesSinRepetidos)
+        //// console.log(sizesSinRepetidos)
 
         //los organiza alfabeticamente
         let sortedCategories = categoriesSinRepetidos.sort();       

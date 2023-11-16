@@ -113,8 +113,8 @@ export const DELETE_REVIEW = 'DELETE_REVIEW';
 const URL = "https://etnia-production.up.railway.app";
 
 export const registroTerceros = (payload) => async (dispatch) => {
-  console.log('holaaa desde la accion apenas entra');
-  console.log(payload);
+  // console.log('holaaa desde la accion apenas entra');
+  // console.log(payload);
   try {
     const info = await axios.post(`${URL}/users/registerTerceros`, payload, {
       headers: {
@@ -174,10 +174,10 @@ export function createReview(newReview) {
   };
 }
 export function getReviewById(id) {
-  console.log(id)
+  // console.log(id)
   return async function (dispatch) {
     const reviewsInfo = await axios.get(`${URL}/reviews/${id}`);
-    console.log(reviewsInfo.data);
+    // console.log(reviewsInfo.data);
     dispatch({
       type: GET_REVIEW_BY_ID,
       payload: reviewsInfo.data,
@@ -204,10 +204,10 @@ export function deleteReview(id) {
 }
 
 export function finishPurchase(objectPago) {
-  console.log(objectPago);
+  // console.log(objectPago);
 
   return async function compra(dispatch) {
-    console.log('entre a la compra');
+    // console.log('entre a la compra');
     try {
       const response = await axios.post(`${URL}/purchase/order`, objectPago);
       window.location.href = response.data.init_point;
@@ -253,7 +253,7 @@ export function getPurchaseDetail(payload) {
 }
 
 export function getAllFavs(id) {
-  console.log('me despacharon');
+  // console.log('me despacharon');
 
   return async function (dispatch) {
     const response = await axios.get(`${URL}/favs/${id}`);
@@ -367,7 +367,7 @@ export function getLogistica() {
 export function createLogistica(newLogistica) {
   return async function (dispatch) {
     try {
-      console.log('logistica');
+      // console.log('logistica');
       const info = await axios.post(`${URL}/tables/postlogistica`, newLogistica);
       dispatch({
         type: CREATE_LOGISTICA,
@@ -410,12 +410,12 @@ export function createMediopago(newMediopago) {
 }
 
 export function createProduct(newproduct) {
-  console.log(newproduct);
+  // console.log(newproduct);
   return async function (dispatch) {
     try {
       const { data } = await axios.post(`${URL}/products`, newproduct);
-      console.log(data);
-      console.log(newproduct);
+      // console.log(data);
+      // console.log(newproduct);
 
       dispatch({
         type: CREATE_PRODUCT,
@@ -518,7 +518,7 @@ export function updateLogistica(payload) {
 export function getAllProducts() {
   return async function (dispatch) {
     const productsInfo = await axios.get(`${URL}/products`);
-    console.log(productsInfo);
+    // console.log(productsInfo);
     dispatch({
       type: GET_ALL_PRODUCTS,
       payload: productsInfo.data.results,
@@ -539,10 +539,10 @@ export function updateCartItemQuantity(productId, newQuantity) {
 export function confirmToken(token) {
   return async function (dispatch) {
     try {
-      console.log('hola');
-      console.log(token);
+      // console.log('hola');
+      // console.log(token);
       const { data } = await axios.get(`${URL}/users/confirm/${token}`);
-      console.log(data);
+      // console.log(data);
       dispatch({
         type: CONFITRM_TOKEN,
         payload: data,
@@ -559,12 +559,12 @@ export function confirmToken(token) {
 }
 
 export function registerUser(payload) {
-  console.log('register');
+  // console.log('register');
   return async function (dispatch) {
     try {
       const respuesta = await axios.post(`${URL}/users/register`, payload);
-      console.log('sigue la data');
-      console.log(respuesta);
+      // console.log('sigue la data');
+      // console.log(respuesta);
       dispatch({
         type: REGISTER_USER,
         payload: respuesta.data,
@@ -671,7 +671,7 @@ export function getProductsname(name) {
 export function getByID(id) {
   return async function (dispatch) {
     const { data } = await axios.get(`${URL}/products/${id}`);
-    console.log(data);
+    // console.log(data);
     dispatch({
       type: GET_BY_ID,
       payload: data,
@@ -683,7 +683,7 @@ export function getUserByID(id) {
   return async function (dispatch) {
     try {
       const { data } = await axios.get(`${URL}/users/${id}`);
-      console.log(data);
+      // console.log(data);
       dispatch({
         type: GET_USER_BY_ID,
         payload: data,
@@ -716,7 +716,7 @@ export function getAllUsers() {
 export function updateProduct(payload) {
   return async function (dispatch) {
     try {
-      console.log(payload.id);
+      // console.log(payload.id);
       const info = await axios.put(`${URL}/products/put/${payload.id}`, payload);
       dispatch({
         type: UPDATE_PRODUCT,
@@ -747,7 +747,7 @@ export function getAddFavorites(product) {
         payload: product,
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 }
@@ -911,7 +911,7 @@ export function userLogeado(user) {
         payload: user,
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 }

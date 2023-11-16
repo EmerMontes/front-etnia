@@ -14,12 +14,12 @@ import Iconify from 'src/components/iconify';
 
 export default function UserTableToolbar({ numSelected, filterName, onFilterName }) {
   const handleEdit = () => {
-    console.log('Edit button clicked');
+    // console.log('Edit button clicked');
     // Agrega aquí la lógica para editar el usuario
   };
 
   const handleDelete = () => {
-    console.log('Delete button clicked');
+    // console.log('Delete button clicked');
     // Agrega aquí la lógica para eliminar el usuario
   };
 

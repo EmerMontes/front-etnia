@@ -79,7 +79,7 @@ function RegisterForm(props) {
           setMensaje(
             "Registro exitoso: Revisa tu correo para confirmar tu contraseña"
           );
-          console.log(
+          // console.log(
             "Registro exitoso: Revisa tu correo para confirmar tu contraseña",
             response.message
           );

@@ -59,7 +59,7 @@ function Home(props) {
     loadProducts();
     dispatch(getAllSelects());
     loadFavs();
-    console.log(user);
+    // console.log(user);
   }, [dispatch, initialFilters, initialPageSet]);
 
   const handleChange = (event) => {
@@ -143,7 +143,7 @@ function Home(props) {
   }
 
   useEffect(() => {
-    console.log(Page?.info?.total);
+    // console.log(Page?.info?.total);
   }, [handleChange]);
   const textPaginado = `${currentPage} of ${maxPages}`;
 

@@ -7,7 +7,7 @@ import { updateUser, getUserByID  } from '../../redux/actions'; // Asegúrate de
 
 export default function UserDetail(props) {
   const { id } = useParams();
-  console.log('Parámetros de la ruta:', useParams()); // Imprime los parámetros de la ruta
+  // console.log('Parámetros de la ruta:', useParams()); // Imprime los parámetros de la ruta
   const [user,] = useState(null);
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
@@ -16,9 +16,9 @@ export default function UserDetail(props) {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        console.log('ID del usuario:', id); // Imprime el valor de id
+        // console.log('ID del usuario:', id); // Imprime el valor de id
         dispatch(getUserByID(id)); // Envía la acción al store de Redux
-        console.log('Usuario:', id); // Imprime el valor de user
+        // console.log('Usuario:', id); // Imprime el valor de user
       } catch (error) {
         console.error("Error al obtener los datos del usuario:", error);
       }

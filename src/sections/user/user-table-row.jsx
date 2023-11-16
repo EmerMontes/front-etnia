@@ -53,21 +53,21 @@ export default function UserTableRow({
   };
 
   const handleEditClick = () => {
-    console.log('Editar', id);
+    // console.log('Editar', id);
     navigate(`/edituser/${id}`);
     handleCloseMenu();
   };
 
   const handleDeleteClick = () => {
     dispatch(deleteUser(id));
-    console.log('Eliminar', id);
+    // console.log('Eliminar', id);
     window.location.reload();
     handleCloseMenu();
   };
   const handleRestoreClick = () => {
     window.location.reload();
     dispatch(restoreUser(id));
-    console.log('restaurrrr', id);
+    // console.log('restaurrrr', id);
     handleCloseMenu();
   };
 

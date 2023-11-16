@@ -97,7 +97,7 @@ const EditUser = () => {
         try {
           
           const long = Object.values(errors);
-          console.log(long)
+          // console.log(long)
           if (long.length === 0 || isAllEmptyStrings(long)) {
             input.name= primeraMayuscula(input.name)
             input.last_name= primeraMayuscula(input.last_name)
@@ -105,7 +105,7 @@ const EditUser = () => {
             else { input.employee= false}
             if(input.admin ==="admin")  {input.admin=true}
             else {input.admin= false}
-            console.log(input)   
+            // console.log(input)   
             await dispatch(updateUser(input))
             mostrarAlertaExitosa();
             // setInput({name:'', last_name: '', email:'', address:'', phone_number: '',
